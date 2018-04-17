@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+  		margin: 10px;
+  	}
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- Danh mục chức năng-->
+			<div class="col-md-4">
+				<ul class="nav navbar-link">
+
+				    <li >
+				    	<a data-toggle="tab" href="#ThongTinTaiKhoan"> 
+				    		<span class="glyphicon glyphicon-user"></span>&nbsp&nbsp&nbspThông tin tài khoản
+				    	</a>
+				    </li>
+
+				    <li>
+				    	<a data-toggle="tab" href="#QuanLiSanPham"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp&nbsp&nbspQuản lí sản phẩm</a>
+				    </li>
+				    <li>
+				    	<a data-toggle="tab" href="#QuanLiDonHang"><span class="glyphicon glyphicon-backward"></span>&nbsp&nbsp&nbspQuản lí Đơn hàng</a>
+				    </li>
+				</ul>
+			</div>
+
+			<div class="tab-content col-md-8">
+				    <div id="ThongTinTaiKhoan" class="tab-pane fade">
+				      <h3>Menu 1</h3>
+				      <p>Quản lí Tài Khoản</p>
+				    </div>
+				    <div id="QuanLiSanPham" class="tab-pane fade">
+				      <h3>Menu 2</h3>
+				      <p>Quản lí sản phẩmg</p>
+				    </div>
+				    <div id="QuanLiDonHang" class="tab-pane fade">
+				      <h3>Menu 3</h3>
+				      <p>Quản lí đơn hàng</p>
+				    </div>
+			  </div>
+		</div>
+	</div>
+</body>
+</html>

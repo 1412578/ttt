@@ -32,3 +32,30 @@ $('.thumbnail').mouseleave(function() {
 	});
 
 });
+
+//Generate Day month year in register form
+var divYear = document.getElementById("Year")
+for(i = 1950; i < 2018; i++){
+	var selectionItem = document.createElement("option")
+	selectionItem.innerHTML=`${i}`
+	selectionItem.Text=`${i}`
+	divYear.appendChild(selectionItem);
+	console.log("ahihi");
+}
+
+var divYear = document.getElementById("Month")
+for(i = 1; i < 13; i++){
+	var selectionItem = document.createElement("option")
+	selectionItem.innerHTML=`${i}`
+	selectionItem.Text=`${i}`
+	divYear.appendChild(selectionItem);
+	console.log("ahihi");
+}
+var divYear = document.getElementById("Day")
+for(i = 1; i < 32; i++){
+	var selectionItem = document.createElement("option")
+	selectionItem.innerHTML=`${i}`
+	selectionItem.Text=`${i}`
+	divYear.appendChild(selectionItem);
+	console.log("ahihi");
+}

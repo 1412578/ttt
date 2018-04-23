@@ -40,7 +40,7 @@ https://drive.google.com/file/d/11C3-q0k7mwwhds0Ghcfis92iE3iJ4Ux_/view
   * [ ] Có sử dụng captcha
 ### 2 Phân hệ người dùng đã đăng nhập
 * [ ] **2.1 Có đầy đủ chức năng của phân hệ khách**
-* [ ] **2.2 Cập nhật thông tin cá nhân**
+* [x] **2.2 Cập nhật thông tin cá nhân**
 * [ ] **2.3 Chọn mua sản phẩm**
   * [ ] Cho phép chọn mua sản phẩm khi xem chi tiết hoặc khi xem danh sách sản phẩm
 * [ ] **2.4 Điều chỉnh thông tin sản phẩm đang chọn mua (quản lý giỏ hàng)**

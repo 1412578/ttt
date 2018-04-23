@@ -1,0 +1,58 @@
+html{
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+}
+body{
+	background-color: #dfdfdf;
+}
+.profile{
+	border-radius: 2px;
+	background-color: white;
+    padding: 40px;
+    margin: 100px 344px;
+    min-width: 600px;
+}
+.info{
+	display: flex;
+	flex-direction: row;
+	margin: 24px 10px;
+}
+.label{
+	width: 150px;
+	font-size: 0.9em;
+}
+.value input[type=text]{
+    border: solid 1px #bcbcbc;
+    border-radius: 3px;
+    padding: 8px 12px;
+}
+.value label{
+	padding: 5px 0;
+}
+.label span{
+	vertical-align: middle;
+}
+.value{
+	display: flex;
+	flex-grow: 1;
+}
+.value select{
+	padding: 5px 10px;
+}
+.value .col{
+	width: 33%;
+	margin-right: 10px;
+}
+.value label input{
+	
+}
+.update{
+	margin-left: 160px;
+    padding: 8px 30px;
+    background-color: #FFEB3B;
+    color: #3a350e;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: "Roboto";
+}

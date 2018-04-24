@@ -11,8 +11,9 @@
   		margin: 10px;
   	}
   </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body >
 	<div class="container">
 		<div class="row">
 			<!-- Danh mục chức năng-->
@@ -195,67 +196,89 @@
 					        <th>Tổng tiền</th>
 					        <th>Trạng thái đơn hàng</th>
 					      </tr>
-
 					    </thead>
+
 					    <tbody>
 
-					      <tr>
-					        <td>1512445</td>
+						<tr id = 'DoiMau'>
+					       <td>1512445</td>
 					        <td>05/07/200</td>
 					        <td>LondonDryGin</td>
 					        <td>12$</td>
 					        <td>
 					        	<form>
 							    <div class="form-group">
-							      <select class="form-control" id="sel1">
-							        <option>Chưa Giao</option>
-							        <option>Đang Giao</option>
-							        <option>Đã Giao</option>
+							      <select class="form-control" id="mySelect" onchange="myFunction()" >
+							        <option value="ChuaGiao">Chưa Giao</option>
+							        <option value="DangGiao" selected="true">Đang Giao</option>
+							        <option value="DaGiao">Đã Giao</option>
 							      </select>
 							    </div>
 							  </form>
 					        </td>
 					      </tr>
 
-					      <tr>
-					        <td>1512446</td>
-					        <td>05/09/201</td>
-					        <td>AmericanDryGin</td>
+
+					      <tr id = 'DoiMau1'>
+					       <td>1512445</td>
+					        <td>05/07/200</td>
+					        <td>LondonDryGin</td>
 					        <td>12$</td>
 					        <td>
 					        	<form>
 							    <div class="form-group">
-							      <select class="form-control" id="sel1">
-							        <option>Chưa Giao</option>
-							        <option>Đang Giao</option>
-							        <option>Đã Giao</option>
+							      <select class="form-control" id="mySelect1" onchange="myFunction1()" >
+							        <option value="ChuaGiao" selected="true">Chưa Giao</option>
+							        <option value="DangGiao">Đang Giao</option>
+							        <option value="DaGiao" selected="true">Đã Giao</option>
 							      </select>
 							    </div>
 							  </form>
 					        </td>
 					      </tr>
-					      <tr>
-							<td>1512447</td>
-							<td>05/07/2006</td>
-							<td>GeneverGin</td>
-							<td>12$</td>
-							<td>
+
+					      <tr id = 'DoiMau2'>
+					       <td>1512445</td>
+					        <td>05/07/200</td>
+					        <td>LondonDryGin</td>
+					        <td>12$</td>
+					        <td>
 					        	<form>
 							    <div class="form-group">
-							      <select class="form-control" id="sel1">
-							        <option>Chưa Giao</option>
-							        <option>Đang Giao</option>
-							        <option>Đã Giao</option>
+							      <select class="form-control" id="mySelect2" onchange="myFunction2()" >
+							        <option value="ChuaGiao" selected="true">Chưa Giao</option>
+							        <option value="DangGiao">Đang Giao</option>
+							        <option value="DaGiao">Đã Giao</option>
 							      </select>
 							    </div>
 							  </form>
 					        </td>
 					      </tr>
-				    </tbody>
-  					</table>
+
+					      <tr id = 'DoiMau3'>
+					       <td>1512445</td>
+					        <td>05/07/200</td>
+					        <td>LondonDryGin</td>
+					        <td>12$</td>
+					        <td>
+					        	<form>
+							    <div class="form-group">
+							      <select class="form-control" id="mySelect3" onchange="myFunction3()" >
+							        <option value="ChuaGiao" selected="true">Chưa Giao</option>
+							        <option value="DangGiao">Đang Giao</option>
+							        <option value="DaGiao">Đã Giao</option>
+							      </select>
+							    </div>
+							  </form>
+					        </td>
+					      </tr>
+
+				    	</tbody>
+  					 </table>
 				    </div>
 			  </div>
 		</div>
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

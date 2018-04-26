@@ -59,3 +59,9 @@ for(i = 1; i < 32; i++){
 	divYear.appendChild(selectionItem);
 	console.log("ahihi");
 }
+
+var TimKiemSanPham = function(){
+	var i = Math.floor((Math.random() * 2) + 1);
+	window.open('products_${`i`}.html')
+}
+	

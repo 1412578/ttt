@@ -39,16 +39,16 @@ https://drive.google.com/file/d/11C3-q0k7mwwhds0Ghcfis92iE3iJ4Ux_/view
 * [ ] **1.7 Đăng ký**
   * [ ] Có sử dụng captcha
 ### 2 Phân hệ người dùng đã đăng nhập
-* [ ] **2.1 Có đầy đủ chức năng của phân hệ khách**
+* [x] **2.1 Có đầy đủ chức năng của phân hệ khách**
 * [x] **2.2 Cập nhật thông tin cá nhân**
-* [ ] **2.3 Chọn mua sản phẩm**
-  * [ ] Cho phép chọn mua sản phẩm khi xem chi tiết hoặc khi xem danh sách sản phẩm
-* [ ] **2.4 Điều chỉnh thông tin sản phẩm đang chọn mua (quản lý giỏ hàng)**
-* [ ] **2.5 Thanh toán**
-  * [ ] Lưu thông tin sản phẩm khách hàng chọn mua và cập nhật lại số lượng bán, số lượng tồn tương ứng cho từng sản phẩm
-* [ ] **2.6 Xem lịch sử mua hàng**
-  * [ ] Xem danh sách các đơn hàng đã từng đặt theo thứ tự từ mới đến cũ
-  * [ ] Xem chi tiết từng đơn hàng và trạng thái của các đơn hàng này
+* [x] **2.3 Chọn mua sản phẩm**
+  * [x] Cho phép chọn mua sản phẩm khi xem chi tiết hoặc khi xem danh sách sản phẩm
+* [x] **2.4 Điều chỉnh thông tin sản phẩm đang chọn mua (quản lý giỏ hàng)**
+* [x] **2.5 Thanh toán**
+  * [x] Lưu thông tin sản phẩm khách hàng chọn mua và cập nhật lại số lượng bán, số lượng tồn tương ứng cho từng sản phẩm
+* [x] **2.6 Xem lịch sử mua hàng**
+  * [x] Xem danh sách các đơn hàng đã từng đặt theo thứ tự từ mới đến cũ
+  * [ x Xem chi tiết từng đơn hàng và trạng thái của các đơn hàng này
 ### 3 Phân hệ quản trị (Admin)
 * [ ] **3.1 Dashboard**
   * [ ] Hiển thị danh sách các chức năng mà admin có thể sử dụng

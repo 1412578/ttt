@@ -5,17 +5,50 @@ html{
 body{
 	background-color: #dfdfdf;
 }
-.profile{
+.userbar{
+	width: 150px;
+	background-color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+}
+.userbar-item{
+    font-size: 11px;
+    text-align: center;
+    color: #565656;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.userbar-item i{
+	font-size: 22px;
+}
+.userbar-item span{
+	    margin-top: 8px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+.userbar-item:hover{
+	background-color: #ececec;
+}
+.userbar-item.selected{
+	background-color: white;
+}
+.content{
+	padding: 10px 25px;
+	flex-grow: 1;
+}
+.user{
 	border-radius: 2px;
 	background-color: white;
-    padding: 40px;
-    margin: 100px 344px;
     min-width: 600px;
+    display: flex;
+    flex-direction: row;
 }
 .info{
 	display: flex;
 	flex-direction: row;
-	margin: 24px 10px;
+	margin: 20px 10px;
 }
 .label{
 	width: 150px;
@@ -30,7 +63,9 @@ body{
 	padding: 5px 0;
 }
 .label span{
+	font-size: 13px;
 	vertical-align: middle;
+	letter-spacing: 0.3px;
 }
 .value{
 	display: flex;

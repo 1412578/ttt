@@ -6,71 +6,81 @@
     <meta name="description" content="Thông tin người dùng">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="stylesheets/user/style.css" rel="stylesheet">
+    <link href="stylesheets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <title>Thông tin người dùng</title>
   </head>
   <body>
-    <section class="profile">
-      <div class="info">
-        <div class="label"><span>Họ tên</span></div>
-        <div class="value">
-          <input class="value" type="text" value="Trần Quang Trí"/>
+    <div class="user">
+      <div class="userbar">
+        <a class="userbar-item selected"><i class="icon-user"></i><span>Thông tin tài khoản</span></a>
+        <a class="userbar-item"><i class="icon-shopping-cart"></i><span>Giỏ hàng</span></a>
+        <a class="userbar-item" href="history_order.html"><i class="icon-list-alt"></i><span>Lịch sử mua hàng</span></a>
+      </div>
+      <div class="content">
+        <section class="profile">
+          <div class="info">
+            <div class="label"><span>Họ tên</span></div>
+            <div class="value">
+              <input class="value" type="text" value="Trần Quang Trí"/>
+            </div>
+          </div>
+          <div class="info">
+            <div class="label"><span>Số điện thoại</span></div>
+            <div class="value">
+              <input class="value" type="text" value="171 Quốc Lộ 1A"/>
+            </div>
+          </div>
+          <div class="info">
+            <div class="label"><span>Email</span></div>
+            <div class="value">
+              <input class="value" type="text" value="tranquagtri96@gmail.com"/>
+            </div>
+          </div>
+          <div class="info">
+            <div class="label"><span>Địa chỉ</span></div>
+            <div class="value">
+              <input class="value" type="text" value="171 Quốc Lộ 1A"/>
+            </div>
+          </div>
+          <div class="info">
+            <div class="label"><span>Giới tính</span></div>
+            <div class="value">
+              <label class="col">
+                <input name="gender" type="radio" value="male"/>Nam</label>
+                
+                <label class="col"><input name="gender" type="radio" value="female"/>Nữ</label>
+                <label class="col"><input name="gender" type="radio" value="other"/>Khác</label>
+              </div>
+            </div>
+            <div class="info date">
+              <div class="label"><span>Ngày sinh</span></div>
+              <div class="value">
+                <select class="col">
+                  <option value="volvo">Ngày</option>
+                  <option value="volvo">1</option>
+                  <option value="saab">2</option>
+                  <option value="opel">3</option>
+                  <option value="audi">4</option>
+                </select>
+                <select class="col">
+                  <option value="volvo">Tháng</option>
+                  <option value="volvo">1</option>
+                  <option value="saab">2</option>
+                  <option value="opel">3</option>
+                  <option value="audi">4</option>
+                </select>
+                <select class="col">
+                  <option value="volvo">Năm</option>
+                  <option value="volvo">1994</option>
+                  <option value="saab">1995</option>
+                  <option value="opel">1996</option>
+                  <option value="audi">1997</option>
+                </select>
+              </div>
+            </div>
+            <button class="update">Cập nhật</button>
+          </section>
         </div>
       </div>
-      <div class="info">
-        <div class="label"><span>Số điện thoại</span></div>
-        <div class="value">
-          <input class="value" type="text" value="171 Quốc Lộ 1A"/>
-        </div>
-      </div>
-      <div class="info">
-        <div class="label"><span>Email</span></div>
-        <div class="value">
-          <input class="value" type="text" value="tranquagtri96@gmail.com"/>
-        </div>
-      </div>
-      <div class="info">
-        <div class="label"><span>Địa chỉ</span></div>
-        <div class="value">
-          <input class="value" type="text" value="171 Quốc Lộ 1A"/>
-        </div>
-      </div>
-      <div class="info">
-        <div class="label"><span>Giới tính</span></div>
-        <div class="value">
-          <label class="col">
-            <input name="gender" type="radio" value="male"/>Nam</label>
-          
-          <label class="col"><input name="gender" type="radio" value="female"/>Nữ</label>
-          <label class="col"><input name="gender" type="radio" value="other"/>Khác</label>
-        </div>
-      </div>
-      <div class="info date">
-        <div class="label"><span>Ngày sinh</span></div>
-        <div class="value">
-          <select class="col">
-            <option value="volvo">Ngày</option>
-            <option value="volvo">1</option>
-            <option value="saab">2</option>
-            <option value="opel">3</option>
-            <option value="audi">4</option>
-          </select>
-          <select class="col">
-            <option value="volvo">Tháng</option>
-            <option value="volvo">1</option>
-            <option value="saab">2</option>
-            <option value="opel">3</option>
-            <option value="audi">4</option>
-          </select>
-          <select class="col">
-            <option value="volvo">Năm</option>
-            <option value="volvo">1994</option>
-            <option value="saab">1995</option>
-            <option value="opel">1996</option>
-            <option value="audi">1997</option>
-          </select>
-        </div>
-      </div>
-      <button class="update">Cập nhật</button>
-    </section>
-  </body>
-</html>
+    </body>
+  </html>

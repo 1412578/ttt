@@ -1,0 +1,45 @@
+.history-list{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.history-item{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+.history-item.header .item-code{
+	color: black;
+}
+.history-item .item-code{
+	width: 20%;
+	text-decoration: none;
+	color: #0078f9;
+}
+.history-item .item-totalprice{
+	width: 20%;
+}
+.history-item .item-status{
+	width: 25%;
+}
+.history-item .item-status.paid{
+	color: blue;
+}
+.history-item .item-status.canceled{
+	color: red;
+}
+.history-item .item-date{
+	width: 30%;
+}
+.history-item:nth-child(2n+1){
+	background-color: #f9f9ff;
+}
+.history-item:hover{
+	background-color: #f0f0ff;
+}
+.history-item.header{
+	background-color: #f0f0ff;
+	padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}

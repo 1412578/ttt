@@ -1,789 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>VTeam Shopping Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Bootstrap styles -->
-    <link href="stylesheets/bootstrap/bootstrap.css" rel="stylesheet"/>
-    <!-- Customize styles -->
-    <link href="stylesheets/guest/style.css" rel="stylesheet"/>
-    <!-- font awesome styles -->
-	<link href="stylesheets/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+		<title>VTeam Shopping Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Bootstrap styles -->
+		<link href="stylesheets/bootstrap/bootstrap.css" rel="stylesheet"/>
+		<!-- Customize styles -->
+		<link href="stylesheets/guest/style.css" rel="stylesheet"/>
+		<!-- font awesome styles -->
+		<link href="stylesheets/font-awesome/css/font-awesome.css" rel="stylesheet">
 		<!--[if IE 7]>
 			<link href="stylesheets/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
 		<![endif]-->
-
 		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-
-	<!-- Favicons -->
-    <link rel="shortcut icon" href="ico/favicon.ico">
-  </head>
-<body>
-<!-- 
-	Upper Header Section 
--->
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="topNav">
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="ico/favicon.ico">
+	</head>
+	<body>
+		<!--
+			Upper Header Section
+		-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="topNav">
+				<div class="container">
+					<div class="alignR">
+						<div class="pull-left socialNw">
+							<span class="logo pull-left">Alcool</span>
+							<form action="#" class="navbar-search pull-left">
+								<select class="search-filter">
+									<option value="all">Tất cả</option>
+									<option value="category">Tên</option>
+									<option value="category">Loại</option>
+									<option value="company">Nhà sản xuất</option>
+								</select>
+								<input type="text" placeholder="Search" class="search-btn search-query span2">
+							</form>
+						</div>
+						<a href="/user/profile.html"><span class="icon-user"></span> Tài khoản</a>
+						<a href="/register.html"><span class="icon-edit"></span> Đăng ký </a>
+							<ul class="nav nav-custom">
+								<li class="dropdown">
+									<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Login <b class="caret"></b></a>
+									<div class="dropdown-menu">
+										<form class="form-horizontal loginFrm">
+											<div class="control-group">
+												<input type="text" class="span2" id="inputEmail" placeholder="Email">
+											</div>
+											<div class="control-group">
+												<input type="password" class="span2" id="inputPassword" placeholder="Password">
+											</div>
+											<div class="control-group">
+												<label class="checkbox">
+													<input type="checkbox"> Remember me
+												</label>
+												<button type="submit" class="shopBtn btn-block">Sign in</button>
+											</div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						<a href="/user/cart.html"><span class="icon-shopping-cart"></span> 2 sản phẩm - <span class="badge badge-warning"> $448.42</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+		Lower Header Section
+		-->
 		<div class="container">
-			<div class="alignR">
-				<div class="pull-left socialNw">
-					<a href="#"><span class="icon-twitter"></span></a>
-					<a href="#"><span class="icon-facebook"></span></a>
-					<a href="#"><span class="icon-youtube"></span></a>
-					<a href="#"><span class="icon-tumblr"></span></a>
+			<div id="gototop"> </div>
+			<header id="header">
+			</header>
+			<!--
+			Navigation Bar Section
+			-->
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+						<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<div class="nav-collapse">
+							<ul class="nav">
+								<li class="active"><a href="/index.html">Home	</a></li>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								
+							</ul>
+						</div>
+					</div>
 				</div>
-				<a class="active" href="/index.html"> <span class="icon-home"></span> Home</a>
-						<a href="/user/profile.html"><span class="icon-user"></span> My Account</a>
-						<a href="/register.html"><span class="icon-edit"></span> Free Register </a>
-						<a href="/contact.html"><span class="icon-envelope"></span> Contact us</a>
-						<a href="/user/cart.html"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
 			</div>
-		</div>
-	</div>
-</div>
-
-<!--
-Lower Header Section 
--->
-<div class="container">
-<div id="gototop"> </div>
-<header id="header">
-<div class="row">
-	<div class="span4">
-	<h1>
-	<a class="logo" href="index.html"><span></span> 
-		<img src="images/logo-bootstrap-shoping-cart.png" alt="bootstrap sexy shop">
-	</a>
-	</h1>
-	</div>
-	<div class="span4">
-	<div class="offerNoteWrapper">
-	<h1 class="dotmark">
-	<i class="icon-cut"></i>
-	Shopping now some product now sale off just under $14
-	</h1>
-	</div>
-	</div>
-	<div class="span4 alignR">
-	<p><br> <strong> Support (24/7) :  0800 1234 678 </strong><br><br></p>
-	<span class="btn btn-mini">[ 2 ] <span class="icon-shopping-cart"></span></span>
-	<span class="btn btn-warning btn-mini">$</span>
-	<span class="btn btn-mini">&pound;</span>
-	<span class="btn btn-mini">&euro;</span>
-	</div>
-</div>
-</header>
-
-<!--
-Navigation Bar Section 
--->
-<div class="navbar">
-	  <div class="navbar-inner">
-		<div class="container">
-		  <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </a>
-		  <div class="nav-collapse">
-			<ul class="nav">
-			  <li class="active"><a href="/index.html">Home	</a></li>
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			  
-			</ul>
-			<form action="#" class="navbar-search pull-left">
-			  <input type="text" placeholder="Search" class="search-query span2">
-			  <input type="button" value="Go" onclick="window.location.href='products_1.html'" />
-			  
-			</form>
-			<ul class="nav pull-right">
-			<li class="dropdown">
-				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Login <b class="caret"></b></a>
-				<div class="dropdown-menu">
-				<form class="form-horizontal loginFrm">
-				  <div class="control-group">
-					<input type="text" class="span2" id="inputEmail" placeholder="Email">
-				  </div>
-				  <div class="control-group">
-					<input type="password" class="span2" id="inputPassword" placeholder="Password">
-				  </div>
-				  <div class="control-group">
-					<label class="checkbox">
-					<input type="checkbox"> Remember me
-					</label>
-					<button type="submit" class="shopBtn btn-block">Sign in</button>
-				  </div>
-				</form>
+			<!--
+			Body Section
+			-->
+			<section class="our_client">
+				
+				<div class="row">
+					<div class="span2">
+						<a href="products_1.html"><img alt="" src="images/1.jpg"></a>
+					</div>
+					<div class="span2">
+						<a href="products_2.html"><img alt="" src="images/2.jpg"></a>
+					</div>
+					<div class="span2">
+						<a href="products_1.html"><img alt="" src="images/3.jpg"></a>
+					</div>
+					<div class="span2">
+						<a href="products_2.html"><img alt="" src="images/4.jpg"></a>
+					</div>
+					<div class="span2">
+						<a href="products_1.html"><img alt="" src="images/5.jpg"></a>
+					</div>
+					<div class="span2">
+						<a href="products_2.html"><img alt="" src="images/6.jpg"></a>
+					</div>
 				</div>
-			</li>
-			</ul>
-		  </div>
-		</div>
-	  </div>
-	</div>
-<!-- 
-
-Body Section 
--->
-<section class="our_client">
-	
-	<div class="row">
-		<div class="span2">
-			<a href="products_1.html"><img alt="" src="images/1.jpg"></a>
-		</div>
-		<div class="span2">
-			<a href="products_2.html"><img alt="" src="images/2.jpg"></a>
-		</div>
-		<div class="span2">
-			<a href="products_1.html"><img alt="" src="images/3.jpg"></a>
-		</div>
-		<div class="span2">
-			<a href="products_2.html"><img alt="" src="images/4.jpg"></a>
-		</div>
-		<div class="span2">
-			<a href="products_1.html"><img alt="" src="images/5.jpg"></a>
-		</div>
-		<div class="span2">
-			<a href="products_2.html"><img alt="" src="images/6.jpg"></a>
-		</div>
-	</div>
-</section>
-<br>
-	<div class="row">
-<div id="sidebar" class="span3">
-<div class="well well-small">
-	<ul class="nav nav-list">
-		<li><a href="products_1.html"><span class="icon-chevron-right"></span>Brandy</a></li>
-		<li><a href="products_2.html"><span class="icon-chevron-right"></span>Whisky</a></li>
-		<li><a href="products_1.html"><span class="icon-chevron-right"></span>Rhum</a></li>
-		<li><a href="products_2.html"><span class="icon-chevron-right"></span>Vodka</a></li>
-		<li><a href="products_1.html"><span class="icon-chevron-right"></span>Gin</a></li>
-		<li><a href="products_2.html"><span class="icon-chevron-right"></span>Vin(Wine)</a></li>
-		<li><a href="products_1.html"><span class="icon-chevron-right"></span>Tequila</a></li>
-		<li><a href="products_2.html"><span class="icon-chevron-right"></span>Liqueurs </a></li>
-		<li><a href="products_1.html"><span class="icon-chevron-right"></span>Hennessy</a></li>
-		<li><a href="products_2.html"><span class="icon-chevron-right"></span>Chivas</a></li>
-		<li style="border:0"> &nbsp;</li>
-		<li> <a class="totalInCart" href="cart.html"><strong>Total Amount  <span class="badge badge-warning pull-right" style="line-height:18px;">$448.42</span></strong></a></li>
-	</ul>
-</div>
-
-			  <div class="well well-small alert alert-warning cntr">
-				  <h2>50% Discount</h2>
-				  <p> 
-					 only valid for online order. <br><br><a class="defaultBtn" href="#">Click here </a>
-				  </p>
-			  </div>
-			  <div class="well well-small" ><a href="#"><img src="images/paypal.jpg" alt="payment method paypal"></a></div>
-			
-			<a class="shopBtn btn-block" href="#">Upcoming products <br><small>Click to view</small></a>
+			</section>
 			<br>
-			<br>
-			<ul class="nav nav-list promowrapper">
-			<li>
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<img src="images/2_1.jpg" alt="bootstrap ecommerce templates">
-				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details_2.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+			<div class="row">
+				<div id="sidebar" class="span3">
+					<div class="well well-small">
+						<ul class="nav nav-list">
+							<li><a href="products_1.html"><span class="icon-chevron-right"></span>Brandy</a></li>
+							<li><a href="products_2.html"><span class="icon-chevron-right"></span>Whisky</a></li>
+							<li><a href="products_1.html"><span class="icon-chevron-right"></span>Rhum</a></li>
+							<li><a href="products_2.html"><span class="icon-chevron-right"></span>Vodka</a></li>
+							<li><a href="products_1.html"><span class="icon-chevron-right"></span>Gin</a></li>
+							<li><a href="products_2.html"><span class="icon-chevron-right"></span>Vin(Wine)</a></li>
+							<li><a href="products_1.html"><span class="icon-chevron-right"></span>Tequila</a></li>
+							<li><a href="products_2.html"><span class="icon-chevron-right"></span>Liqueurs </a></li>
+							<li><a href="products_1.html"><span class="icon-chevron-right"></span>Hennessy</a></li>
+							<li><a href="products_2.html"><span class="icon-chevron-right"></span>Chivas</a></li>
+							<li style="border:0"> &nbsp;</li>
+							<li> <a class="totalInCart" href="cart.html"><strong>Total Amount  <span class="badge badge-warning pull-right" style="line-height:18px;">$448.42</span></strong></a></li>
+						</ul>
+					</div>
+					<div class="well well-small alert alert-warning cntr">
+						<h2>50% Discount</h2>
+						<p>
+							only valid for online order. <br><br><a class="defaultBtn" href="#">Click here </a>
+						</p>
+					</div>
+					<div class="well well-small" ><a href="#"><img src="images/paypal.jpg" alt="payment method paypal"></a></div>
+					
+					<a class="shopBtn btn-block" href="#">Upcoming products <br><small>Click to view</small></a>
+					<br>
+					<br>
+					<ul class="nav nav-list promowrapper">
+						<li>
+							<div class="thumbnail">
+								<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+								<img src="images/2_1.jpg" alt="bootstrap ecommerce templates">
+								<div class="caption">
+									<h4><a class="defaultBtn" href="product_details_2.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+								</div>
+							</div>
+						</li>
+						<li style="border:0"> &nbsp;</li>
+						<li>
+							<div class="thumbnail">
+								<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+								<img src="images/2_2.jpg" alt="shopping cart template">
+								<div class="caption">
+									<h4><a class="defaultBtn" href="product_details_2.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+								</div>
+							</div>
+						</li>
+						<li style="border:0"> &nbsp;</li>
+						<li>
+							<div class="thumbnail">
+								<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+								<img src="images/2_3.jpg" alt="bootstrap template">
+								<div class="caption">
+									<h4><a class="defaultBtn" href="product_details_2.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
-			  </div>
-			</li>
-			<li style="border:0"> &nbsp;</li>
-			<li>
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<img src="images/2_2.jpg" alt="shopping cart template">
-				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details_2.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				<div class="span9">
+					<div class="well np">
+						<div id="myCarousel" class="carousel slide homCar">
+							<div class="carousel-inner">
+								<div class="item">
+									<img style="width:100%" src="images/1_4.jpg" alt="bootstrap ecommerce templates">
+									<div class="carousel-caption">
+										<h4>Top 4 selling products</h4>
+										<p><span>Our products are provide by Diageo corporation</span></p>
+									</div>
+								</div>
+								<div class="item">
+									<img style="width:100%" src="images/1_1.jpg" alt="bootstrap ecommerce templates">
+									<div class="carousel-caption">
+										<h4>Chivas Wine from Scotland</h4>
+										<p><span>100% import from Scotland</span></p>
+									</div>
+								</div>
+								<div class="item active">
+									<img style="width:100%" src="images/1_2.jpg" alt="bootstrap ecommerce templates">
+									<div class="carousel-caption">
+										<h4>Whisky from Canada</h4>
+										<p><span>Canadian Club 'Standard' Whisky</span></p>
+									</div>
+								</div>
+								<div class="item">
+									<img style="width:100%" src="images/1_3.jpg" alt="bootstrap templates">
+									<div class="carousel-caption">
+										<h4>Bourbon from USA</h4>
+										<p><span>Jack Daniel's 'Old No7' Whiskey</span></p>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+						</div>
+					</div>
+					<!--
+					New Products
+					-->
+					
+					<!--
+					Most View Products
+					-->
+					<div class="well well-small">
+						<h3><a class="btn btn-mini pull-right" href="products_1.html" title="View more">View More<span class="icon-plus"></span></a> New Products  </h3>
+						<hr class="soften"/>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_1.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Hennessy XO (Extra Old)</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$22.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_2.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Absolut Citron</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$22.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_3.jpg" alt=""/></a>
+										<div class="caption">
+											<h5>Johnnie Walker Gold Label</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$22.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_4.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Cognac Henri IV Dudognon</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$92.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_5.jpg" alt="hư rồi"></a>
+										<div class="caption">
+											<h5>Vodka Diva Diamonds</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$32.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_6.jpg" alt="hư rồi"/></a>
+										<div class="caption">
+											<h5>Wine-Chateau-Lafitteis</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$122.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_7.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Ultra Premium Tequila Ley 0,925</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$99.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_8.jpg" alt=""></a>
+										<div class="caption">
+											<h5>The Macallan 1926</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$202.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_9.jpg" alt=""/></a>
+										<div class="caption">
+											<h5>Distillers Jamaica</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$232.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="well well-small">
+						<h3><a class="btn btn-mini pull-right" href="products_2.html" title="View more">View More<span class="icon-plus"></span></a> Most View Products  </h3>
+						<hr class="soften"/>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_10.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Dalmore 62</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$2200.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_11.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Chavel Blanc 1947</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$305.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_12.jpg" alt=""/></a>
+										<div class="caption">
+											<h5>Chateau Lafite 1787</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$156.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_13.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Malt Scotch Whisky</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$160.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_14.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Highland Park 50</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$170.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_15.jpg" alt=""/></a>
+										<div class="caption">
+											<h5>Macallan 60</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$200.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_16.jpg" alt=""></a>
+										<div class="caption">
+											<h5>1926 Macallan Fine</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$760.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_17.jpg" alt=""></a>
+										<div class="caption">
+											<h5>Dalmore 64 Trinitas</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$160.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a  href="product_details_2.html"><img src="images/3_18.jpg" alt=""/></a>
+										<div class="caption">
+											<h5>Dalmore scotch whisky</h5>
+											<h4>
+											<a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+											<a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
+											<span class="pull-right">$2200.00</span>
+											</h4>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="well well-small">
+						<a class="btn btn-mini pull-right" href="products_1.html">View more <span class="icon-plus"></span></a>
+						<h3>Best selling Products </h3>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_19.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>Chivas 18</p>
+											<p><strong> $22.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_20.png" alt=""></a>
+										<div class="caption cntr">
+											<p>Chivas Revolve</p>
+											<p><strong> $22.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_21.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>Remy Martin Extra</p>
+											<p><strong> $22.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_22.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>64 year old Macallan</p>
+											<p><strong> $469.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_23.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>105 year old Master of Malt</p>
+											<p><strong> $1402.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_24.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>Tequila Ley</p>
+											<p><strong> $1500.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="row-fluid">
+							<ul class="thumbnails">
+								<li class="span4">
+									<div class="thumbnail">
+										
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_25.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>Henri IV Dudognon Heritage</p>
+											<p><strong> $1900.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_26.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>Moet Chandon</p>
+											<p><strong> $1450.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+								<li class="span4">
+									<div class="thumbnail">
+										<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+										<a href="product_details_2.html"><img src="images/3_27.jpg" alt=""></a>
+										<div class="caption cntr">
+											<p>Martell Cordon Bleu</p>
+											<p><strong> $404.00</strong></p>
+											<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
+											<div class="actionList">
+												<a class="pull-left" href="#">Add to Wish List </a>
+												<a class="pull-left" href="#"> Add to Compare </a>
+											</div>
+											<br class="clr">
+										</div>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
 				</div>
-			  </div>
-			</li>
-			<li style="border:0"> &nbsp;</li>
-			<li>
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<img src="images/2_3.jpg" alt="bootstrap template">
-				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details_2.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
-				</div>
-			  </div>
-			</li>
-		  </ul>
-
-	</div>
-	<div class="span9">
-	<div class="well np">
-		<div id="myCarousel" class="carousel slide homCar">
-            <div class="carousel-inner">
-			  <div class="item">
-                <img style="width:100%" src="images/1_4.jpg" alt="bootstrap ecommerce templates">
-                <div class="carousel-caption">
-                      <h4>Top 4 selling products</h4>
-                      <p><span>Our products are provide by Diageo corporation</span></p>
-                </div>
-              </div>
-			  <div class="item">
-                <img style="width:100%" src="images/1_1.jpg" alt="bootstrap ecommerce templates">
-                <div class="carousel-caption">
-                      <h4>Chivas Wine from Scotland</h4>
-                      <p><span>100% import from Scotland</span></p>
-                </div>
-              </div>
-			  <div class="item active">
-                <img style="width:100%" src="images/1_2.jpg" alt="bootstrap ecommerce templates">
-                <div class="carousel-caption">
-                      <h4>Whisky from Canada</h4>
-                      <p><span>Canadian Club 'Standard' Whisky</span></p>
-                </div>
-              </div>
-              <div class="item">
-                <img style="width:100%" src="images/1_3.jpg" alt="bootstrap templates">
-                <div class="carousel-caption">
-                      <h4>Bourbon from USA</h4>
-                      <p><span>Jack Daniel's 'Old No7' Whiskey</span></p>
-                </div>
-              </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-          </div>
-        </div>
-<!--
-New Products
--->
-	
-	<!--
-	Most View Products
-	-->
-	<div class="well well-small">
-		  <h3><a class="btn btn-mini pull-right" href="products_1.html" title="View more">View More<span class="icon-plus"></span></a> New Products  </h3>
-		  <hr class="soften"/>
-		  <div class="row-fluid">
-		  <ul class="thumbnails">
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_1.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>Hennessy XO (Extra Old)</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$22.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_2.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>Absolut Citron</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$22.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_3.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Johnnie Walker Gold Label</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$22.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-		  </ul>	
-		  <ul class="thumbnails">
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_4.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>Cognac Henri IV Dudognon</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$92.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_5.jpg" alt="hư rồi"></a>
-				<div class="caption">
-				  <h5>Vodka Diva Diamonds</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$32.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_6.jpg" alt="hư rồi"/></a>
-				<div class="caption">
-				  <h5>Wine-Chateau-Lafitteis</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$122.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-		  </ul>	
-		  <ul class="thumbnails">
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_7.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>Ultra Premium Tequila Ley 0,925</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$99.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_8.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>The Macallan 1926</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$202.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details_2.html"><img src="images/3_9.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Distillers Jamaica</h5>
-				  <h4>
-					  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$232.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-		  </ul>	
-	</div>
-	</div>
-		<div class="well well-small">
-		  <h3><a class="btn btn-mini pull-right" href="products_2.html" title="View more">View More<span class="icon-plus"></span></a> Most View Products  </h3>
-		  <hr class="soften"/>
-		  <div class="row-fluid">
-			  <ul class="thumbnails">
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_10.jpg" alt=""></a>
-					<div class="caption">
-					  <h5>Dalmore 62</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$2200.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_11.jpg" alt=""></a>
-					<div class="caption">
-					  <h5>Chavel Blanc 1947</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$305.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_12.jpg" alt=""/></a>
-					<div class="caption">
-					  <h5>Chateau Lafite 1787</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$156.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-			  </ul>	
-		</div>
-		<div class="row-fluid">
-			  <ul class="thumbnails">
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_13.jpg" alt=""></a>
-					<div class="caption">
-					  <h5>Malt Scotch Whisky</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$160.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_14.jpg" alt=""></a>
-					<div class="caption">
-					  <h5>Highland Park 50</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$170.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_15.jpg" alt=""/></a>
-					<div class="caption">
-					  <h5>Macallan 60</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$200.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-			  </ul>	
-		</div>
-		<div class="row-fluid">
-			  <ul class="thumbnails">
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_16.jpg" alt=""></a>
-					<div class="caption">
-					  <h5>1926 Macallan Fine</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$760.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_17.jpg" alt=""></a>
-					<div class="caption">
-					  <h5>Dalmore 64 Trinitas</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$160.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-				<li class="span4">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details_2.html"><img src="images/3_18.jpg" alt=""/></a>
-					<div class="caption">
-					  <h5>Dalmore scotch whisky</h5>
-					  <h4>
-						  <a class="defaultBtn" href="product_details_1.html" title="Click to view"><span class="icon-zoom-in"></span></a>
-						  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-						  <span class="pull-right">$2200.00</span>
-					  </h4>
-					</div>
-				  </div>
-				</li>
-			  </ul>	
-		</div>
-	</div>
-	
-
-
-		<div class="well well-small">
-			<a class="btn btn-mini pull-right" href="products_1.html">View more <span class="icon-plus"></span></a>
-			<h3>Best selling Products </h3>
-			<div class="row-fluid">
-				<ul class="thumbnails">
-				<li class="span4">
-					<div class="thumbnail">
-					 
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_19.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>Chivas 18</p>
-						<p><strong> $22.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_20.png" alt=""></a>
-					<div class="caption cntr">
-						<p>Chivas Revolve</p>
-						<p><strong> $22.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_21.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>Remy Martin Extra</p>
-						<p><strong> $22.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				</ul>
-				
 			</div>
-			<div class="row-fluid">
-				<ul class="thumbnails">
-				<li class="span4">
-					<div class="thumbnail">
-					 
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_22.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>64 year old Macallan</p>
-						<p><strong> $469.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
+			<!--
+			Clients
+			-->
+			<!--
+			Footer
+			-->
+			<footer class="footer">
+				<div class="row-fluid">
+					<div class="span2">
+						<h5>Your Account</h5>
+						<a href="#">YOUR ACCOUNT</a><br>
+						<a href="#">PERSONAL INFORMATION</a><br>
+						<a href="#">ADDRESSES</a><br>
+						<a href="#">DISCOUNT</a><br>
+						<a href="#">ORDER HISTORY</a><br>
 					</div>
+					<div class="span2">
+						<h5>Information</h5>
+						<a href="contact.html">CONTACT</a><br>
+						<a href="#">SITEMAP</a><br>
+						<a href="#">LEGAL NOTICE</a><br>
+						<a href="#">TERMS AND CONDITIONS</a><br>
+						<a href="#">ABOUT US</a><br>
 					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_23.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>105 year old Master of Malt</p>
-						<p><strong> $1402.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
+					<div class="span2">
+						<h5>Our Offer</h5>
+						<a href="#">NEW PRODUCTS</a> <br>
+						<a href="#">TOP SELLERS</a><br>
+						<a href="#">SPECIALS</a><br>
+						<a href="#">MANUFACTURERS</a><br>
+						<a href="#">SUPPLIERS</a> <br/>
 					</div>
+					<div class="span6">
+						<h5>The standard Wines</h5>
+						It's a common dilemma: you want to open a new bottle of wine,
+						but you only plan on drinking a glass or two.
+						Some wine experts say it's best to finish the whole bottle within 24 hours for the freshest taste,
+						and it's a bummer to pour another glass the following week only to realize it's gone bad.
+						A solution that's becoming more common is the idea of letting people buy wines by the glass —
+						in places other than restaurants. And a new company called Standard Wines, which launched on Nov. 17,
+						makes this concept more accessible to wine-lovers everywhere.
 					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_24.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>Tequila Ley</p>
-						<p><strong> $1500.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				</ul>
-				
+				</div>
+			</footer>
+			</div><!-- /container -->
+			<div class="copyright">
+				<div class="container">
+					<p class="pull-right">
+						<a href="#"><img src="images/maestro.png" alt="payment"></a>
+						<a href="#"><img src="images/mc.png" alt="payment"></a>
+						<a href="#"><img src="images/pp.png" alt="payment"></a>
+						<a href="#"><img src="images/visa.png" alt="payment"></a>
+						<a href="#"><img src="images/disc.png" alt="payment"></a>
+					</p>
+					<span>Copyright &copy; 2018<br> VTeam shopping website</span>
+				</div>
 			</div>
-			<div class="row-fluid">
-				<ul class="thumbnails">
-				<li class="span4">
-					<div class="thumbnail">
-					 
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_25.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>Henri IV Dudognon Heritage</p>
-						<p><strong> $1900.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_26.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>Moet Chandon</p>
-						<p><strong> $1450.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-					<a class="zoomTool" href="product_details_1.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="product_details_2.html"><img src="images/3_27.jpg" alt=""></a>
-					<div class="caption cntr">
-						<p>Martell Cordon Bleu</p>
-						<p><strong> $404.00</strong></p>
-						<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-						<div class="actionList">
-							<a class="pull-left" href="#">Add to Wish List </a> 
-							<a class="pull-left" href="#"> Add to Compare </a>
-						</div> 
-						<br class="clr">
-					</div>
-					</div>
-				</li>
-				</ul>
-				
-			</div>
-		</div>
-	</div>
-	</div>
-<!-- 
-Clients 
--->
-
-
-<!--
-Footer
--->
-<footer class="footer">
-<div class="row-fluid">
-<div class="span2">
-<h5>Your Account</h5>
-<a href="#">YOUR ACCOUNT</a><br>
-<a href="#">PERSONAL INFORMATION</a><br>
-<a href="#">ADDRESSES</a><br>
-<a href="#">DISCOUNT</a><br>
-<a href="#">ORDER HISTORY</a><br>
- </div>
-<div class="span2">
-<h5>Information</h5>
-<a href="contact.html">CONTACT</a><br>
-<a href="#">SITEMAP</a><br>
-<a href="#">LEGAL NOTICE</a><br>
-<a href="#">TERMS AND CONDITIONS</a><br>
-<a href="#">ABOUT US</a><br>
- </div>
-<div class="span2">
-<h5>Our Offer</h5>
-<a href="#">NEW PRODUCTS</a> <br>
-<a href="#">TOP SELLERS</a><br>
-<a href="#">SPECIALS</a><br>
-<a href="#">MANUFACTURERS</a><br>
-<a href="#">SUPPLIERS</a> <br/>
- </div>
- <div class="span6">
-<h5>The standard Wines</h5>
-It's a common dilemma: you want to open a new bottle of wine, 
-but you only plan on drinking a glass or two. 
-Some wine experts say it's best to finish the whole bottle within 24 hours for the freshest taste, 
-and it's a bummer to pour another glass the following week only to realize it's gone bad. 
-A solution that's becoming more common is the idea of letting people buy wines by the glass — 
-in places other than restaurants. And a new company called Standard Wines, which launched on Nov. 17, 
-makes this concept more accessible to wine-lovers everywhere.
- </div>
- </div>
-</footer>
-</div><!-- /container -->
-
-<div class="copyright">
-<div class="container">
-	<p class="pull-right">
-		<a href="#"><img src="images/maestro.png" alt="payment"></a>
-		<a href="#"><img src="images/mc.png" alt="payment"></a>
-		<a href="#"><img src="images/pp.png" alt="payment"></a>
-		<a href="#"><img src="images/visa.png" alt="payment"></a>
-		<a href="#"><img src="images/disc.png" alt="payment"></a>
-	</p>
-	<span>Copyright &copy; 2018<br> VTeam shopping website</span>
-</div>
-</div>
-<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="javascripts/guest/jquery.js"></script>
-	<script src="javascripts/guest/bootstrap.min.js"></script>
-	<script src="javascripts/guest/jquery.easing-1.3.min.js"></script>
-    <script src="javascripts/guest/jquery.scrollTo-1.4.3.1-min.js"></script>
-    <script src="javascripts/guest/shop.js"></script>
-  </body>
-</html>
+			<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+			<!-- Placed at the end of the document so the pages load faster -->
+			<script src="javascripts/guest/jquery.js"></script>
+			<script src="javascripts/guest/bootstrap.min.js"></script>
+			<script src="javascripts/guest/jquery.easing-1.3.min.js"></script>
+			<script src="javascripts/guest/jquery.scrollTo-1.4.3.1-min.js"></script>
+			<script src="javascripts/guest/shop.js"></script>
+		</body>
+	</html>

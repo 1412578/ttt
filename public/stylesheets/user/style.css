@@ -18,7 +18,7 @@ body{
     padding: 24px 0;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .userbar-item i{
 	font-size: 22px;
@@ -41,7 +41,6 @@ body{
 .user{
 	border-radius: 2px;
 	background-color: white;
-    min-width: 600px;
     display: flex;
     flex-direction: row;
 }
@@ -50,7 +49,7 @@ body{
 	flex-direction: row;
 	margin: 20px 10px;
 }
-.label{
+.info-label{
 	width: 150px;
 	font-size: 0.9em;
 }
@@ -62,7 +61,7 @@ body{
 .value label{
 	padding: 5px 0;
 }
-.label span{
+.info-label span{
 	font-size: 13px;
 	vertical-align: middle;
 	letter-spacing: 0.3px;

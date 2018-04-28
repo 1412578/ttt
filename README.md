@@ -6,6 +6,11 @@ Thành viên
 * **1512445**	Hoàng Thế Quyền
 * **1512681** Hứa Văn Vũ
 ## Hướng dẫn chạy đồ án
+* Cài module http-server: npm i http-server -g
+* Start server: http-server
+* Đường dẫn phân hệ admin: localhost:8080/admin/index.html
+* Đường dẫn phân hệ user: localhost:8080/user/profile.html
+* Đường dẫn phân hệ guest: localhost:8080/index.html
 
 ## Yêu cầu đồ án
 https://drive.google.com/file/d/11C3-q0k7mwwhds0Ghcfis92iE3iJ4Ux_/view

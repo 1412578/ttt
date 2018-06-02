@@ -2,15 +2,15 @@ var path = require("path");
 const glob = require('glob');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const PurifyCSSPlugin = require('purifycss-webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
 	mode: "development",
 	entry: {
 		layout: "./views/layout.js"
 	},
 	output: {
-		path: path.resolve(__dirname, "public"),
-		filename: "[name].bundle.js",
-		publicPath: '/'
+		path: path.resolve(__dirname, "assets/dist"),
+		filename: "[name].bundle.js"
 	},
 	plugins: [
     new MiniCssExtractPlugin({
@@ -21,12 +21,13 @@ module.exports = {
     new PurifyCSSPlugin({
       // Give paths to parse for rules. These should be absolute!
       paths: glob.sync(path.join(__dirname, 'views/layout.hbs')),
+	  minimize: true
     })
   	],
 	module: {
 		rules: [
 			{
-				test: /\.s?css$/,
+				test: /\.s?[ac]ss$/,
 				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
 			}
 		]

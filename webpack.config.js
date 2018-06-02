@@ -3,8 +3,9 @@ const glob = require('glob');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const PurifyCSSPlugin = require('purifycss-webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const isProduction = process.env.NODE_ENV === "production";
 module.exports = {
-	mode: "development",
+	mode: isProduction ? "production" : "development",
 	entry: {
 		layout: "./views/layout.js"
 	},
@@ -18,12 +19,12 @@ module.exports = {
       // both options are optional
       filename: "[name].bundle.css"
     }),
-    new PurifyCSSPlugin({
-      // Give paths to parse for rules. These should be absolute!
+    // use purifycss only in production
+    isProduction ? new PurifyCSSPlugin({
       paths: glob.sync(path.join(__dirname, 'views/layout.hbs')),
 	  minimize: true
-    })
-  	],
+    }) : null
+  	].filter(Boolean),
 	module: {
 		rules: [
 			{

@@ -11,7 +11,10 @@ var compression = require('compression');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views/dist'));
+if (process.env.NODE_ENV === 'production' )
+	app.set('views', path.join(__dirname, 'views/dist'));
+else
+	app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(compression());

@@ -21,6 +21,7 @@
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "bulma": "^0.7.1",
+    "critical": "^1.2.0",
     "css-loader": "^0.28.11",
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1",
@@ -28,13 +29,13 @@
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
+    "penthouse": "^1.4.5",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.10.2",
-    "webpack-cli": "^2.1.4",
-    "critical": "^1.2.0"
+    "webpack-cli": "^2.1.4"
   }
 }

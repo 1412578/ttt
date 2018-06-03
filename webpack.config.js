@@ -22,7 +22,8 @@ module.exports = {
     // use purifycss only in production
     isProduction ? new PurifyCSSPlugin({
       paths: glob.sync(path.join(__dirname, 'views/layout.hbs')),
-	  minimize: true
+	  minimize: true,
+	  purifyOptions: {whitelist: ['is-active']}
     }) : null
   	].filter(Boolean),
 	module: {

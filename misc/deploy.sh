@@ -6,7 +6,7 @@ ssh-add .travis/deploy # Add the private key to SSH
 git show-branch
 git config --global push.default matching
 git remote add deploy ssh://deploy@$IP$DEPLOY_DIR
-git push deploy html_to_hbs
+git push -f deploy $TRAVIS_BRANCH
 
 # Skip this command if you don't need to execute any additional commands after deploying.
 ssh deploy@$IP <<EOF

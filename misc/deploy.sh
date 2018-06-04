@@ -9,7 +9,7 @@ git remote add deploy ssh://git@$IP$DEPLOY_DIR
 git push deploy html_to_hbs
 
 # Skip this command if you don't need to execute any additional commands after deploying.
-ssh deploy@$IP <<EOF
+yes | ssh deploy@$IP <<EOF
   cd $DEPLOY_DIR
   forever stopall
   npm install
